@@ -6,14 +6,14 @@
 \origin unavailable
 \textclass article
 \begin_preamble
-\usepackage{amsthm}
-\usepackage{fontspec}
+\usepackage{amsmath}
+\usepackage{latexsym}
 \usepackage{geometry}
  \geometry{
- right=12mm,
- left=12mm,
- top=17.5mm,
- bottom=22.5mm
+ right=15mm,
+ left=15mm,
+ top=20mm,
+ bottom=25mm
  }
 \renewcommand{\baselinestretch}{1.5} 
 \sloppy
@@ -115,7 +115,25 @@ theorems-ams
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+contentsname}{Բովանդակություն}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+refname}{Գրականություն}
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -131,6 +149,31 @@ thispagestyle{empty}
 
 \begin_layout Standard
 \begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
 \end_inset
 
 
@@ -200,6 +243,29 @@ thispagestyle{empty}
 \series default
 , որոնցում չի պահանջվում ավել չափողականությունների տարածանման, կամ կոմպակտ
  լինելը։
+\end_layout
+
+\begin_layout Standard
+Այս հետազոտական աշխատանքում համառոտ ձևակերպված և թարգմանված է 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "KKG"
+literal "false"
+
+\end_inset
+
+ գրականության որոշ բաժիններ, որոնցից են Կալուզա-Քլայնի տեսության պատմական
+ ակնարկը՝ առաջացման պատճառները, տեսության մշակման ժամանակ առաջ եկած որոշ
+ խնդիրների մոտեցումներ և այլն։ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "KKG"
+literal "false"
+
+\end_inset
+
+-ից բացի ներառված չեն այլ ցիտումներ, քանի որ դրանք արդեն առկա են հոդվածի
+ բնօրինակում և լրացուցիչ աղբյուրներից տեղեկություններ ավելացված չեն։ 
 \end_layout
 
 \begin_layout Section
@@ -542,8 +608,206 @@ thispagestyle{empty}
 D=11 ՍՈՒՊԵՐ-ԳՐԱՎԻՏԱՑԻԱ
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula $\;$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Լրացուցիչ նյութական դաշտերը «ձեռքով» ավելացնելու ավելի բնական եղանակ է տեսությու
+նը սուպերսիմետրիկ դարձնելը, այսինքն, ամեն բոզոնի համապատասխանեցնել դեռևս
+ չբացահայտված ֆերմիոնային «սուպեր-զուգընկեր», և հակառակը։ Սրա պատճառն այն
+ է, որ Կալուզա-Քլայնի՝ բարձր չափանի տարածաժամանակային սիմետրիաները որպես
+ տրամաչափային սիմետրիա նկարագրելու ծրագիրը կարող է առաջացնել միայն 4-աչափ
+ տրամաչափային բոզոններ։ Եթե տեսությունում պահանջում ենք ֆերմիոնային դաշտեր՝
+ սուպերսիմետրիայից ելնելով, ապա դրանց ավելացումը պետք է լինի ձեռքով։ Վերջին
+ նշված սահմանափակումը կարող է չվերաբերվել ոչ-կոմպակտիֆիկացված Կալուզա-Քլայնի
+ տեսություններին, որոնցում լրացուցիչ կոորդինատներից «համեստ» կախվածությունը,
+ որը փորձարարական սահմանափակման արդյունք է, Էյնշտեյնի հավասարումներին տալիս
+ է բավականին հարուստ կառուցվածք՝ բարձր չափանի մաքուր երկրաչափությունից ստանալ
+ շատ ընդհանուր տիպի նյութ՝ 4-աչափ տարածությունում։ Օրինակ, 5-աչափ տարածությունու
+մ էլեկտրամագնիսականության տրամաչափային բոզոններից՝ ֆոտոններից բացի, ստացվում
+ է փոշենման նյութ, վակուում, կամ կոշտ նյութ։
+\end_layout
+
+\begin_layout Standard
+Սուպերսիմետրիկ գրավիտացիան(կամ 
+\series bold
+սուպերգրավիտացիան
+\series default
+), կյանք է առել որպես 4-աչափ տեսություն՝ 1976 թ․-ին, բայց կտրուկ ցատկ կատարեց
+ ավելի բարձր չափողականություններ, որը բավականին հաջողված ստացվեց D=11 դեպքում՝
+ 3 հիմնական պատճառով․
+\end_layout
+
+\begin_layout Enumerate
+Նամը ցույց տվեց, որ 11-ը չափողականությունների առավելագույն թիվն է, որը համատեղել
+ի է միայնակ գրավիտոնի գաղափարի հետ։ Սրան հետագայում հաջորդեն Ուիթթենի ապացույցը,
+ որ 11-ը նաև նվազագույն թիվն է, որով հնարավոր է Կալուզա-Քլայնի տեսությամբ
+ միավորել տարրական մասնիկների ստարնդարտ մոդելի բոլոր ուժերը(որպեսզի պարունակի
+ ուժեղ փոխազդեցության 
+\begin_inset Formula $SU(3)$
+\end_inset
+
+ և էլեկտրաթույլ փոխազդեցության 
+\begin_inset Formula $SU(2)\times U(1)$
+\end_inset
+
+ տրամաչափային խմբերը),
+\end_layout
+
+\begin_layout Enumerate
+11-ից ցածր չափողականությունների դեպքում լրացուցիչ նյութական դաշտերի ընտրությունը
+ միարժեք չէ, և Կրեմմերն ու այլոք 1978 թ․-ին ցույց տվեցին, որ D=11 դեպքում
+ ընտրություը միակն է, որը համատեղելի է սուպերսիմետրիայի սզբունքին(կան հավասար
+ Բոզե և Ֆերմի ազատության աստիճաններ),
+\end_layout
+
+\begin_layout Enumerate
+Ֆրեյդը և Ռուբինը 1980 թ․-ին ցույց տվեցին, որ D=11 մոդելի կոմպակտիֆիկացումը
+ հնարավոր է միայն երկու եղանակով․ կոմպակտիֆիկացնելով 4, կամ 7 չափողականություննե
+րը և մակրոսկոպական թողնել համապատասխանաբար մնացած 7, կամ 4 չափողականությունները։
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ոգևորված այս հաջողություններից, 1980-ականներին 11 չափանի սուպեր-գրավիտացիայի
+ տեսությունը «Ամեն ինչի տեսության» առաջատար թեկնածուն էր։
+\end_layout
+
+\begin_layout Standard
+Սակայն որոշ հանգամանքներ առաջ եկան, որոնք աղավաղում են այս տեսլականը։ Թվարկենք
+ դրանցից մի քանիսը․
+\end_layout
+
+\begin_layout Enumerate
+Կոմպակտ բազմաձևությունները, որոնք դիտարկված էին Ուիթթենի կողմից, պարզվեց
+ որ չեն առաջացնում քվարկեր և լեպտոններ և համատեղելի չեն սուպերսիմետրիայի
+ հետ։ Դրանց լավագույն փոխարինողերը 7 չափանի սֆերան և սեղմված 7 չափանի սֆերան՝
+ նկարագրված համապատասխանաբար սիմետրիա 
+\begin_inset Formula $SO(8)$
+\end_inset
+
+ և 
+\begin_inset Formula $SO(5)\times SU(2)$
+\end_inset
+
+ խմբերով։ Ցավոք այս խմբերը չեն պարունակում ստանդարտ մոդելի սիմետրիայի նվազագույն
+ պայմանը՝ 
+\begin_inset Formula $SU(3)\times SU(2)\times U(1)$
+\end_inset
+
+ խումբը։ Սա հիմնականում ուղղվում է ավելացնելով նյութական դաշտեր, «բաղադրյալ
+ տրամաչափային դաշտեր»՝ 11 չափանի Լագրանժյանին։
+\end_layout
+
+\begin_layout Enumerate
+Շատ բարդ է 11 չափանի տեսությունում կառուցել քիրալություն՝ ռեալիստիկ ֆերմիոնային
+ մոդելի համար։ Սրա համար արվել են փորձեր ավելացնել բարձր չափանի տրամաչափային
+ դաշտեր, ոչ-կոմպակտ ներքին բազմաձևություններ, և Ռիմանյան երկրաչափություն։
+\end_layout
+
+\begin_layout Enumerate
+D=11 սուպեր-գրավիտացիայի տեսությունը խաթարված է 4-աչափ տարածությունում առկա
+ կոսմոլոգիական հաստատունով, ոը հնարավոր չէ վերացնել։
+\end_layout
+
+\begin_layout Enumerate
+Տեսության քվանտացումը բերում է անդարձելի անոմալիաների։
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Վերոնշյալ խնդիրներից որոշ մասը հնարավոր է վերացնել՝ տեսության չափողականությունն
+ իջեցնելով 10-ի․ հեշտանում է քիրալության կառուցումը և վերանում են անոմալիաներից
+ շատերը։ Սակայն, քիրալ ֆերմիոնների ներմուծումը հանգեցնում է անոմալիաների
+ 
+\series bold
+նոր տեսակների
+\series default
+։ D=11 տեսության միակությունը խափանվում է, և բարձր էներգիաների տեսությունը
+ բնականորեն չի բաժանվում 4 մակրոսկոպական և 6 կոմպակտ չափողականությունների։
+ Եվ իսկապես, D=10 սուպերգրավիտացիայի մոդելները ոչ միայն պահանջում են բարձր
+ չափանի նյութական դաշտեր՝ կոմպակտիֆիկացիան ապահովվելու համար, այլ նաև ամբողջովին
+ անտեսում են Կալուզա-Քլայնի մեխանիզմով առաջացած տրամաչափային դաշտերը, և
+ ստիպված բոլոր տրամաչափային դաշտերը տեսությանն են ավելացվում ձեռքով։ Եվ
+ վերջապես, Կալուզայի՝ մաքուր երկրաչափական նկարագրություն ունենալու սկզբունքը
+ խախտվում է ամբողջությամբ։
+\end_layout
+
 \begin_layout Section
 D=10 ՍՈՒՊԵՐ-ԼԱՐԵՐԻ ՏԵՍՈՒԹՅՈՒՆԸ
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\;$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+D=10 տեսությունում առկա անոմալիաների խնդրի լուծման մեջ առաջխաղացում նկատվեց,
+ երբ Գրինը և Շվարցը, ինչպես նաև Գրոսսն ու այլոք ցույց տվեցին, որ կա 10 չափանի
+ սուպեր-գրավիտացիայի ընդամենը 2 տեսություն, որոնցում հնարավոր է կատարելապես
+ վերացնել բոլոր անոմալիաները, որոնք համապատասխանաբար հիմնված են 
+\begin_inset Formula $SO(32)$
+\end_inset
+
+ և 
+\begin_inset Formula $E_{8}\times E_{8}$
+\end_inset
+
+ խմբերի վրա։ Այս դեպքում ևս պետք է ավելացվեն բարձր չափանի Լագրանժյանին,
+ որոնք հայտնի են որպես 
+\series bold
+Չապլին-Մանտոնի անդամներ
+\series default
+։ Սակայն այս անգամը այդպիսի անդամների ավելացումն այդքան էլ կամայական ձևով
+ չէ․ ավել անդամները նրանք էին, որոնք այսպես թե այնպես առաջանալու էին ցածր
+ էներգիաների դեպքում որոշ տիպի սուպեր-լարերի տեսությամբ մոտարկումների դեպքում։
+\end_layout
+
+\begin_layout Standard
+Կոմպակտիֆիկացված Կալուզա-Քլայնի տեսություններից սուպեր-գրավիտացիայի տեսություննե
+րի փոխարեն նախընտրելի դառան սուպեր-լարերի տեսությունները։ Սուպեր-լարերը՝
+ լարերի սուպերսիմետրիկ ընդհանրացումները, խուսափում են լարերի առաջին տեսություննե
+րի պատճառ հանդիսացած տախյոնների ընդհանուր կանխատեսումներից, բայց պահպանում
+ են դրանց լավագույն հատկությունը․ անոմալիաներից զուրկ գրավիտացիայի քվանտային
+ տեսություն ունենալու հավանականությունը։ Վերջերս կապ է հաստատվել սուպեր-լարերի
+ որոշ վիճակների և սև խոռոչների միջև, և նույնիսկ առաջ է քաշվել տեսլական,
+ որ սուպեր-լարերը կարող են լուծել երկար ժամանակ բաց մնացած սև խոռոչների
+ ինֆորմացիայի պարադոքսը։
+\end_layout
+
+\begin_layout Standard
+Միակության խնդրի նման մի բանի առաջ է կանգնում D=10 սուպեր-լարերի տեսությունը,
+ քանի որ 
+\begin_inset Formula $SO(32)$
+\end_inset
+
+ և 
+\begin_inset Formula $E_{8}\times E_{8}$
+\end_inset
+
+ խմբերն առաջացնում են 5 տարբեր լարերի տեսություններ։ Այս բարդությունը լուծվել
+ է Ուիթթենի կողմից, ով ցույց է տվել, որ այդ 5 տեսությունները հնարավոր է
+ ներկայացնել որպես 1 տեսության կերպարանքներ, որը հիմա հայտնի է որպես Մ-տեսությու
+ն։ Այս տեսության ցածր էներգիական սահմանը դառնում է D=11 սուպեր-գրավիտացիան։
 \end_layout
 
 \begin_layout Section
@@ -667,18 +931,777 @@ D=10 ՍՈՒՊԵՐ-ԼԱՐԵՐԻ ՏԵՍՈՒԹՅՈՒՆԸ
 \end_layout
 
 \begin_layout Standard
-Հասանք
+Կալուզան միավորեց էլեկտրամագնիսականությունը գրավիտացիային, կիրառելով Էյնշտեյնի
+ հարաբերականության ընդհանուր տեսությունը 5-աչափ տարածաժամանակային բազմաձևության
+ վրա՝ 4-աչափի փոխարեն։
+\end_layout
+
+\begin_layout Standard
+5-աչափ տարածությունում Էյնշտեյնի հավասարումներն առանց էներգիա-իմպուլսի 5-աչափ
+ թենզորի, ընդունում են 
+\begin_inset Formula 
+\begin{equation}
+\hat{G}_{AB}=0\label{eq:G1}
+\end{equation}
+
+\end_inset
+
+տեսքը, կամ համարժեքորեն
+\begin_inset Formula 
+\begin{equation}
+\hat{R}_{AB}=0,\label{eq:R1}
+\end{equation}
+
+\end_inset
+
+որտեղ 
+\begin_inset Formula $\hat{G}_{AB}\equiv\hat{R}_{AB}-\hat{R}\frac{\hat{g}_{AB}}{2}$
+\end_inset
+
+ Էյնշտեյնի թենզորն է, 
+\begin_inset Formula $\hat{R}_{AB}$
+\end_inset
+
+-ն 5-աչափ Ռիչիի թենզորն է, 
+\begin_inset Formula $\hat{R}=\hat{g}_{AB}\hat{R}^{AB}$
+\end_inset
+
+ 5-աչափ Ռիչիի սկալյարն է, իսկ 
+\begin_inset Formula $\hat{g}_{AB}$
+\end_inset
+
+-ն 5-աչափ մետրիկական թենզորն է։ Շարադրանքում լատինական մեծատառ A,B,...
+ ինդեքսները փոփոխվում են 0-ից 4, իսկ գլխարկով անդամները 5-աչափ մեծություններ
+ են։ Այս հավասարումները ստացվում են վարիացիայի ենթարկելով Էյնշտեյնի 5-աչափ
+ 
+\begin_inset Formula 
+\begin{equation}
+S=-\frac{1}{16\pi\hat{G}}\int\hat{R}\sqrt{-\hat{g}}d^{4}x\,dy\label{eq:Action}
+\end{equation}
+
+\end_inset
+
+գործողությունը՝ ըստ 5-աչափ մետրիկայի, որտեղ 
+\begin_inset Formula $y=x^{4}$
+\end_inset
+
+-ը նոր, 5-րդ կոորդինատն է, իսկ 
+\begin_inset Formula $\hat{G}$
+\end_inset
+
+-ն՝ 5-աչափ «գրավիտացիոն հաստատունը»։
+\end_layout
+
+\begin_layout Standard
+Հետևյալ հավասարումներում նյութի բացակայությունը հենց Կալուզայի առաջին ենթադրությ
+ան մաթեմատիկական նկարգրությունն է՝ ոգեշնչված Էյնշտեյնից, ըստ որի բարձր չափանի
+ տիեզերքը դատարկ է։ Գաղափարը 4-աչափ նյութը 5-աչափ տարածությունում որպես
+ մաքուր երկրաչափության նկարագրումն է։
+\end_layout
+
+\begin_layout Section
+ՀԱՐԱԲԵՐԱԿԱՆՈՒԹՅԱՆ ԸՆԴՀԱՆՈՒՐ ՏԵՍՈՒԹՅԱՆ ՆՎԱԶԱԳՈՒՅՆ ԸՆԴԼԱՅՆՈՒՄԸ
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\;$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+5-աչափ Ռիչիի թենզորն ու Քրիստոֆելի սիմվոլները սահմանված են ըստ մետրիկայի
+ այնպես, ինչպես 4-աչափ դեպքում․
+\begin_inset Formula 
+\begin{align}
+\hat{R}_{AB} & =\partial_{C}\hat{\Gamma}_{AB}^{C}-\partial_{B}\hat{\Gamma}_{AC}^{C}+\hat{\Gamma}_{AB}^{C}\hat{\Gamma}_{CD}^{D}-\hat{\Gamma}_{AD}^{C}\hat{\Gamma}_{BC}^{D},\nonumber \\
+\hat{\Gamma}_{AB}^{C} & =\frac{1}{2}\hat{g}^{CD}\left(\partial_{A}\hat{g}_{DB}+\partial_{B}\hat{g}_{DA}-\partial_{D}\hat{g}_{AB}\right):\label{eq:RGamma}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Այժմ, ամեն ինչ կախված է 5-աչափ մետրիկայի ընտրությունից։ 5-աչափ մետրիկայում
+ 
+\begin_inset Formula $\alpha\beta$
+\end_inset
+
+-ով մասը համապատասխանում է 4-աչափ մետրիկային, 
+\begin_inset Formula $\alpha4$
+\end_inset
+
+-ով մասը՝ էլեկտրամագնիսականության 
+\begin_inset Formula $A_{\alpha}$
+\end_inset
+
+ պոտենցյալին, իսկ 44-ով մասը՝ սկալյար 
+\begin_inset Formula $\phi$
+\end_inset
+
+ դաշտին։ Պատկերենք 5-աչափ մետրիկայի տեսքը՝ հաշվի առնելով վերջինս․
+\begin_inset Formula 
+\begin{equation}
+\left(\hat{g}_{AB}\right)=\left(\begin{array}{cc}
+g_{\alpha\beta}+\kappa^{2}\phi^{2}A_{\alpha}A_{\beta} & \kappa\phi^{2}A_{\alpha}\\
+\kappa\phi^{2}A_{\beta} & \phi^{2}
+\end{array}\right),\label{eq:g1}
+\end{equation}
+
+\end_inset
+
+որտեղ էլեկտրամագնիսականության 
+\begin_inset Formula $A_{\alpha}$
+\end_inset
+
+ պոտենցյալը փոփոխված է 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ հաստատունով, որպեսզի հետագայում գործողության մեջ ստացվեն ճիշտ գործակիցներ։
+ Շարադրանքում հունական 
+\begin_inset Formula $\alpha,\beta,...$
+\end_inset
+
+ փոքրատառ ինդեքսները փոփոխվում են 0-ից 3, իսկ լատինական փոքրատառ a,b,...
+ ինդեքսները՝ 1-ից 3։ Ընտրված է միավորների նորմալ համակարգը, որում վերցված
+ են 
+\begin_inset Formula $c=1,\hbar=1$
+\end_inset
+
+ և դիտարկված է 4-աչափ մետրիկայի 
+\begin_inset Formula $(+---)$
+\end_inset
+
+ տեսքը։
+\end_layout
+
+\begin_layout Section
+ԳԼԱՆԱՅԻՆ ՊԱՅՄԱՆԸ
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\;$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Եթե հաշվի առնենք Կալուզայի տեսության 3-րդ սկզբունքը և հաշվի չառնենք ըստ
+ 5-րդ կոորդինատի բոլոր ածանցյալները, ապա հաշվի առնելով 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:g1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ մետրիկան և 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:RGamma"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ նշանակումները, կստանանք, որ 5-աչափ դաշտի 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:R1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ հավասարումների 
+\begin_inset Formula $\alpha\beta,\alpha4,$
+\end_inset
+
+ և 44 անդամներն ընդունում են
+\begin_inset Formula 
+\begin{align}
+G_{\alpha\beta} & =\frac{\kappa^{2}\phi^{2}}{2}T_{\alpha\beta}^{EM}-\frac{1}{\phi}\left[\nabla_{\alpha}\left(\partial_{\beta}\phi\right)-g_{\alpha\beta}\Box\phi\right],\nonumber \\
+\nabla^{\alpha}F_{\alpha\beta} & =-3\frac{\partial^{\alpha}\phi}{\phi}F_{\alpha\beta},\nonumber \\
+\Box\phi & =\frac{\kappa^{2}\phi^{3}}{4}F_{\alpha\beta}F^{\alpha\beta}\label{eq:Reduced}
+\end{align}
+
+\end_inset
+
+տեսքերը, որոնցում 
+\begin_inset Formula $G_{\alpha\beta}\equiv R_{\alpha\beta}-\frac{Rg_{\alpha\beta}}{2}$
+\end_inset
+
+ Էյնշտեյնի թենզորն է, 
+\begin_inset Formula $T_{\alpha\beta}^{EM}\equiv\frac{g_{\alpha\beta}F_{\gamma\delta}F^{\gamma\delta}}{4}-F_{\alpha}^{\gamma}F_{\beta\gamma}$
+\end_inset
+
+ էլեկտրամագնիսական էներգիա-իմպուլսի թենզորն է, և 
+\begin_inset Formula $F_{\alpha\beta}\equiv\partial_{\alpha}A_{\beta}-\partial_{\beta}A_{\alpha}$
+\end_inset
+
+։ Ընդհանուր առկա է 10+4+1=15 հավասարում, ինչն էլ որ սպասվում էր, քանի որ
+ 5-աչափ մետրիկայում կա 15 ազատ անդամ։
+\end_layout
+
+\begin_layout Section
+\begin_inset Formula $\phi=const$
+\end_inset
+
+ ԴԵՊՔԸ
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\;$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Եթե 
+\begin_inset Formula $\phi$
+\end_inset
+
+ սկալյար դաշտը հաստատուն է ամբողջ տարածաժամանակում, ապա 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Reduced"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+-ի առաջին 2 հավասարումները պարզապես Էյնշտեյնի և Մաքսվելի հավասարումներն
+ են․
+\begin_inset Formula 
+\begin{align}
+G_{\alpha\beta} & =8\pi G\phi^{2}T_{\alpha\beta}^{EM},\nonumber \\
+\nabla^{\alpha}F_{\alpha\beta} & =0,\label{eq:EM}
+\end{align}
+
+\end_inset
+
+որտեղ 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ պարամետրի արժեքն արտահայտվել է G գրավիտացիոն հաստատունի միջոցով
+\begin_inset Formula 
+\begin{equation}
+\kappa\equiv4\sqrt{\pi G}\label{eq:KG}
+\end{equation}
+
+\end_inset
+
+առնչությամբ։ Այս արդյունքը սացել են Կալուզան և Քլայնը, տեղադրելով 
+\begin_inset Formula $\phi=1$
+\end_inset
+
+ արժեքը։ Սակայն, 
+\begin_inset Formula $\phi=const$
+\end_inset
+
+ պայմանը համատեղելեի է 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Reduced"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ դաշտի հավասարումներից 3-ի հետ, երբ 
+\begin_inset Formula $F_{\alpha\beta}F^{\alpha\beta}=0$
+\end_inset
+
+, ինչը որ առաջին անգամ նշվել է Ջորդանի և Թիրիի կողմից։ Այն հանգամանքը, որ
+ սրա ճանաչման համար անհրաժեշտ եղավ 20 տարի, փաստում է խորը կասկածը՝ դեպի
+ սկալյար դաշտերը։
+\end_layout
+
+\begin_layout Standard
+Այժմ, նույն ստացումն արվում է վարիացիոն եղանակով։ Օգտագործելով 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:g1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ մետրիկան, 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:RGamma"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ սահմանումները, օգտագործելով գլանային պայմանը ոչ միայն հաշվի չառնելու համար
+ ըստ 5-րդ կոորդինատի ածանցյալներն, այլ նաև գործողությունից դուրս հանելով
+ ըստ դրա ինտեգրումը, 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Action"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+-ից կստանանք
+\begin_inset Formula 
+\begin{equation}
+S=-\int d^{4}x\sqrt{-g}\phi\left(\frac{R}{16\pi G}+\frac{1}{4}\phi^{2}F_{\alpha\beta}F^{\alpha\beta}+\frac{2}{3\kappa^{2}}\frac{\partial^{\alpha}\phi\partial_{\alpha}\phi}{\phi^{2}}\right),\label{eq:MAction}
+\end{equation}
+
+\end_inset
+
+որտեղ G-ն սահմանված է 5-աչափ գրավիտացիոն 
+\begin_inset Formula $\hat{G}$
+\end_inset
+
+ հաստատունի միջոցով
+\begin_inset Formula 
+\begin{equation}
+G\equiv\frac{\hat{G}}{\int dy}\label{eq:G4}
+\end{equation}
+
+\end_inset
+
+առնչությամբ, որտեղ մենք 
+\begin_inset Formula $16\pi G$
+\end_inset
+
+ անդամն ինտեգրալատակ արտահայտության մեջ մտցնելու համար օգտվել ենք 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:KG"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ կապից։ Ինչպես նախկինում, այնպես էլ այս դեպքում, եթե վերցնենք 
+\begin_inset Formula $\phi=const$
+\end_inset
+
+, ապա 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:MAction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+-ի առաջին 2 անդամները կլինեն Էյնշտեյն-Մաքսվելի գրավիտացիայի և էլեկտրամագնիսական
+ ճառագայթման գործողությունները, իսկ 3-րդ անդամը կլինի Քլայն-Գորդոնի անզանգված
+ սկալյար դաշտի գործողությունը։
+\end_layout
+
+\begin_layout Standard
+Այն հանգամանքը, որ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Action"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ գործողությունից ստացվում է 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:MAction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ գործողությունը, կամ որ նույնն է՝ առնաց աղբյուրի դաշտի 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:R1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ հավասարումներից ստացվում է 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Reduced"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+-ը՝ նյութական աղբյուրով, փաստում է Կալուզա-Քլայնի տեսության հրաշքը։ Ցույց
+ տրվեց, որ 4-աչափ տարածության նյութը(այս դեպքում էլեկտրամագնիսական ճառագայթումը)
+ ծնվում է դատարկ 5-աչափ տարածաժամանակի մաքուր երկրաչափությունից։ Հետագա
+ շարունակական Կալուզա-Քլայնի տեսությունների նպատակն այս սկզբունքը նյութի
+ այլ տեսակների վրա ընդլայնելն է։
+\end_layout
+
+\begin_layout Section
+\begin_inset Formula $A_{\alpha}=0$
+\end_inset
+
+ ԴԵՊՔԸ, ԲՐԱՆՍ-ԴԻԿԵԻ ՏԵՍՈՒԹՅՈՒՆԸ
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\;$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Եթե չպահանջենք 
+\begin_inset Formula $\phi=const$
+\end_inset
+
+ պայմանը, ապա Կալուզայի 5-աչափ տեսությունը էլեկտրամագնիսական երևույթներից
+ բացի կպարունակի նաև Բրանս-Դիկեի տիպի սկալյար դաշտի տեսություն, որը պարզ
+ է դառնում, երբ դիտարկում է էլեկտրամագնիսական պոտենցյալների վերացումը՝ 
+\begin_inset Formula $A_{\alpha}=0$
+\end_inset
+
+։ Առանց գլանային պայմանի, սա ուղղակի կապված կլիներ կոորդինատների ընտրությունից,
+ և չէինք կորցնի ոչ մի հանրահաշվական ընդհանրություն։ 
+\begin_inset Formula $A_{\alpha}=0$
+\end_inset
+
+ պայմանը ֆիզիկական պայման է, որը սահմանափակում է դնում տեսության «գրավիտոն-սկալյ
+ար սեկտոր»-ի վրա։
+\end_layout
+
+\begin_layout Standard
+Սա ընդունելի է որոշ դեպքերում, օրինակ, համասեռ և իզոտրոպ իրավիճակում, որի
+ դեպքում ոչ-անկյունագծային անդամները «կնախընտրեին» ուղղություն, կամ վաղ
+ տիեզերքի մոդելներում, որտեղ դինամիկ կերպով գերակշռում է սկալյար դաշտը։
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:g1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+-ից անտեսելով 
+\begin_inset Formula $A_{\alpha}$
+\end_inset
+
+ դաշտերը, մետրիկան կընդունի 
+\begin_inset Formula 
+\begin{equation}
+\left(\hat{g}_{AB}\right)=\left(\begin{array}{cc}
+g_{\alpha\beta} & 0\\
+0 & \phi^{2}
+\end{array}\right)\label{eq:gHI}
+\end{equation}
+
+\end_inset
+
+տեսքը։ Հաշվի առնելով Կալուզայի՝ տեսության հիմքում դրած 3 պայմանները, դաշտի
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:R1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ հավասարումները՝ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Action"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ գործողությունը պարզեցվում է 
+\begin_inset Formula 
+\begin{equation}
+S=-\frac{1}{16\pi G}\int d^{4}x\sqrt{-g}R\phi\label{eq:BDA0}
+\end{equation}
+
+\end_inset
+
+տեսքի։ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:BDA0"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+-ը Բրանս-Դիկեի`
+\begin_inset Formula 
+\begin{equation}
+S_{BD}=-\int d^{4}x\sqrt{-g}\left(\frac{R\phi}{16\pi G}+\omega\frac{\partial^{\alpha}\phi\partial_{\alpha}\phi}{\phi}\right)+S_{m}\label{eq:BDA}
+\end{equation}
+
+\end_inset
+
+գործողության մասնավոր դեպքն է՝ 
+\begin_inset Formula $\omega=0$
+\end_inset
+
+ դեպքում։
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega$
+\end_inset
+
+ պարամետրի արժեքը՝ հիմնվելով դիտողական տվյալների վրա, իհարկե, մեծ է 500-ից,
+ հետևաբար այս մոդելն այժմ հուսալի չէ։ Այս սահմանափակումը հնարավոր է վերացնել,
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:BDA"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ գործողությունում ավելացնելով լրացուցիչ 
+\begin_inset Formula $V(\phi)$
+\end_inset
+
+ ոչ 0-ական պոտենցյալային դաշտ, ինչպես, օրինակ երկարացված ինֆլյացիոն և այլ
+ տեսություններում, կամ, թույլատրել Բրանս-Դիկեի 
+\begin_inset Formula $\omega$
+\end_inset
+
+ պարամետրի՝ 
+\begin_inset Formula $\phi$
+\end_inset
+
+-ից կախվածությունը, ինչպես օրինակ հիպերերկարացված և այլ ինֆլյացիոն մոդելներում։
+\end_layout
+
+\begin_layout Section
+ՔԼԱՅՆԻ ԿՈՄՊԱԿՏԻՖԻԿԱՑՄԱՆ ՄԵԽԱՆԻԶՄԸ
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\;$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Կալուզայի գլանային պայմանը, որ ոչ մի ֆիզիկական մեծություն կախված չէ 5-րդ
+ չափողականությունից, միացյալ տեսության հետևորդներին թվաց խորդ։ Քլայնն իր
+ մոտեցումն առաջ քաշեց քվանտային տեսության ստեղծման ժամանակ, և, ամենևին զարմանալի
+ չէ, որ կապեց Կալուզայի գլանային պայմանի բացատրությունը ավել չափողականության
+ շատ փոքր լինելուն։
+\end_layout
+
+\begin_layout Standard
+Քլայնը ենթադրեց, որ 5-րդ կոորդինատը տարածանման է, ինչպես առաջին 3 կոորդինատները,
+ և վերագրեց 2 պայման․
+\end_layout
+
+\begin_layout Enumerate
+շրջանային տոպոլոգիա(
+\begin_inset Formula $S^{1}$
+\end_inset
+
+),
+\end_layout
+
+\begin_layout Enumerate
+փոքր մասշտաբներ։
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Վերոնշյալ 1-ին պայմանի դեպքում կամայական 
+\begin_inset Formula $f(x,y)$
+\end_inset
+
+ ֆունկցիա դառնում է պարբերական, որտեղ 
+\begin_inset Formula $x=(x^{0},x^{1},x^{2},x^{3})$
+\end_inset
+
+, և 
+\begin_inset Formula $y=x^{4}$
+\end_inset
+
+՝
+\begin_inset Formula 
+\[
+f(x,y)=f(x,y+2\pi r),
+\]
+
+\end_inset
+
+որտեղ r-ը 5-րդ չափողականության մասշտաբային պարամետր հանդիսացող «շառավիղն»
+ է։ Հետևաբար, բոլոր դաշտերը հնարավոր է ենթարկել Ֆուրիե վերլուծության․ 
+\begin_inset Formula 
+\begin{align}
+g_{\alpha\beta}(x,y) & =\sum_{n=-\infty}^{n=+\infty}g_{\alpha\beta}^{(n)}(x)e^{iny/r},\nonumber \\
+A_{\alpha}(x,y) & =\sum_{n=-\infty}^{n=+\infty}A_{\alpha}^{(n)}(x)e^{iny/r},\nonumber \\
+\phi(x,y) & =\sum_{n=-\infty}^{n=+\infty}\phi^{(n)}e^{iny/r},\label{eq:Fourier}
+\end{align}
+
+\end_inset
+
+որտեղ ցուցիչում առկա (n)-ը հղում է անում n-րդ Ֆուրիե մոդին։ Քվանտային տեսության
+ շնորհիվ, այս մոդերն իրենց հետ y ուղղությամբ տանում են իմպուլս՝ 
+\begin_inset Formula $\frac{\mid n\mid}{r}$
+\end_inset
+
+-ի կարգի։ Ահա այստեղ Քլայնի երկրորդ սկզբունքն է ի հայտ գալիս․ եթե r-ը բավականին
+ փոքր լինի, ապա նույնիսկ n=1 մոդի y-իմպուլսն այնքան մեծ կլինի, որ փորձարարական
+ սահմանից դուրս կգտնվի։ Հետևաբար, տեսանելի կլինեն միայն n=0 մոդերը, որոնք
+ կախված չեն y-ից, ինչը պահանջված էր Կալուզայի տեսությունում։
+\end_layout
+
+\begin_layout Standard
+Հասկանանք, թե ինչքան մեծ կարող է լինել մասշտաբային r պարամետրը։ r-ի արժեքի
+ վրա ուժեղ սահմանափակումներ դրվում են բարձր էներգիաների տարրական մասնիկների
+ ֆիզիկայից, որը ստուգում է համեմատաբար մեծ զանգվածներ և փոքր հեռավորություններ։
+ Այդպիսի մի քանի փորձեր r-ի վրա դնում են ատտոմետրից(
+\begin_inset Formula $10^{-18}$
+\end_inset
+
+ մ) փոքր լինելու պայման։ Տեսաբանները հաճախ r-ին տալիս են Պլանկի երկարության
+ արժեք(
+\begin_inset Formula $l_{PL}\sim10^{-35}$
+\end_inset
+
+ մ), որը թե՜ բնական ընտրություն է, և թե՜ այնքան փոքր է, որ n=0-ից տարբեր
+ մոդերի զանգվածը լինի Պլանկի զանգվածից(
+\begin_inset Formula $m_{PL}\sim10^{19}$
+\end_inset
+
+ ԳէՎ) շատ անգամներ մեծ։
+\end_layout
+
+\begin_layout Standard
+Ընդհանուր դեպքում, Կալուզայի 5-աչափ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:g1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ մետրիկան պարունակում է բոլոր Ֆուրիե մոդերը։ Վերջինից, կոմպակտիֆիկացման
+ տեսություններում հնարավոր է ստանալ այսպես կոչված «Կալուզա-Քլայնի անսացը»,
+ որում դեն են նետված 
+\begin_inset Formula $n\neq0$
+\end_inset
+
+ մոդերը։ 5-աչափ դեպքում անսացը դեն է նետում 
+\begin_inset Formula $g_{\alpha\beta},A_{\alpha},\phi$
+\end_inset
+
+ մեծությունների y-ից կախվածությունը, սկիզբ տալով 
+\begin_inset Formula $g_{\alpha\beta}^{(0)}$
+\end_inset
+
+ գրավիտոնի, 
+\begin_inset Formula $A_{\alpha}^{(0)}$
+\end_inset
+
+ ֆոտոնի և 
+\begin_inset Formula $\phi^{(0)}$
+\end_inset
+
+ սկալյարի էֆեկտիվ, 4-աչափ, «ցածր էներգիական» տեսությանը։ Ավելի բարձր չափերի
+ դեպքում սկզբնական մետրիկայի և Կալուզա-Քլայնի անսացի միջև կապն այսքան պարզ
+ չի ստացվում։
+\end_layout
+
+\begin_layout Standard
+Կարևոր է նշել «հիմնական վիճակի մետրիկա» 
+\begin_inset Formula $\hat{g}_{AB}$
+\end_inset
+
+-ի՝ 
+\begin_inset Formula $\hat{g}_{AB}(x,y)$
+\end_inset
+
+-ի վակուումային միջինը լինելու հանգամանքը, որը որոշում է կոմպակտ տարածության
+ տոպոլոգիան։ 5-աչափ դեպքում, որտեղ տոպոլոգիան 
+\begin_inset Formula $M^{4}\times S^{1}$
+\end_inset
+
+ է, վերջին դիտարկումը կընդունի 
+\begin_inset Formula 
+\begin{equation}
+\left(\left\langle \hat{g}_{AB}\right\rangle \right)=\left(\begin{array}{cc}
+\eta_{\alpha\beta} & 0\\
+0 & -1
+\end{array}\right)\label{eq:VEM}
+\end{equation}
+
+\end_inset
+
+տեսքը, որտեղ 
+\begin_inset Formula $\eta_{\alpha\beta}$
+\end_inset
+
+-ն Մինկովսկու 4-աչափ տարածության մետրիկան է։
 \end_layout
 
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "key-1"
-literal "false"
+key "KKG"
+literal "true"
 
 \end_inset
 
-
+ J.M.
+ Overduin, P.S.
+ Wesson, Kaluza-Klein gravity, Physics Reports Volume 283, Issues 5–6, April
+ 1997, Pages 303-378
 \end_layout
 
 \end_body
